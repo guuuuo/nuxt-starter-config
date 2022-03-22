@@ -1,0 +1,6 @@
+namespace: sfe4j
+resources:
+  - namespace.yaml
+  - deploy.yaml
+  - service.yaml
+  - ingress.yaml
