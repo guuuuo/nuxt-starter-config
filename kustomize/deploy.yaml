@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: sfe4j
-        image: docker.amoylabs.com:30500/sfe4j:3
+        image: docker.amoylabs.com:30500/sfe4j:4
         ports:
         - name: http
           containerPort: 8080
