@@ -6,7 +6,7 @@ spec:
   ports:
   - name: http
     protocol: TCP
-    port: 8080
-    targetPort: http
+    port: 28080
+    targetPort: 28080
   selector:
     app: sfe4j-demo

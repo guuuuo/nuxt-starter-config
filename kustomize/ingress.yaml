@@ -14,4 +14,4 @@ spec:
           service:
             name: sfe4j-demo
             port: 
-              number: 8080
+              number: 28080
