@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sfe4j
+  name: sfe4j-demo
 spec:
   ingressClassName: nginx
   rules:
-  - host: sfe4j.amoylabs.com
+  - host: sfe4j-demo.amoylabs.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: sfe4j
+            name: sfe4j-demo
             port: 
               number: 8080

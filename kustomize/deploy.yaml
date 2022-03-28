@@ -1,20 +1,20 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: sfe4j
+  name: sfe4j-demo
 spec:
   selector:
     matchLabels:
-      app: sfe4j
+      app: sfe4j-demo
   replicas: 1 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: sfe4j
+        app: sfe4j-demo
     spec:
       containers:
-      - name: sfe4j
-        image: docker.amoylabs.com:30500/sfe4j:8
+      - name: sfe4j-demo
+        image: docker.amoylabs.com:30500/sfe4j/sfe4j-demo:1
         ports:
         - name: http
           containerPort: 8080

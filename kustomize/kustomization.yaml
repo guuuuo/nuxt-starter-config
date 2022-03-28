@@ -1,4 +1,4 @@
-namespace: sfe4j
+namespace: sfe4j-demo
 resources:
   - namespace.yaml
   - deploy.yaml
