@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: sfe4j-demo
-        image: docker.amoylabs.com:30500/sfe4j/sfe4j-demo:14
+        image: docker.amoylabs.com:30500/sfe4j/sfe4j-demo:15
         ports:
         - name: http
           containerPort: 28080
