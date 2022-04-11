@@ -24,3 +24,5 @@ spec:
               value: "demo"
             - name: TITLE
               value: "SFE4J Demo"
+            - name: BASE_DIR_PATH
+              value: "/data"
