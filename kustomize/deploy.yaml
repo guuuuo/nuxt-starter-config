@@ -22,3 +22,5 @@ spec:
           env:
             - name: ACTIVE_PROFILE
               value: "demo"
+            - name: TITLE
+              value: "SFE4J Demo"
