@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: sfe4j-demo
-  replicas: 2 # tells deployment to run 2 pods matching the template
+  replicas: 1 # tells deployment to run 2 pods matching the template
   revisionHistoryLimit: 0
   template:
     metadata:
@@ -14,8 +14,11 @@ spec:
         app: sfe4j-demo
     spec:
       containers:
-      - name: sfe4j-demo
-        image: docker.amoylabs.com:30500/sfe4j/sfe4j-demo:21
-        ports:
-        - name: http
-          containerPort: 28080
+        - name: sfe4j-demo
+          image: docker.amoylabs.com:30500/sfe4j/sfe4j-demo:21
+          ports:
+            - name: http
+              containerPort: 28080
+          env:
+            - name: ACTIVE_PROFILE
+              value: "demo"
