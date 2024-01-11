@@ -1,0 +1,17 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata: 
+  name: sfe4j-demo
+  namespace: sfe4j-demo
+spec: 
+  entryPoints: 
+    - websecure
+  routes: 
+    - kind: Rule
+      match: Host(`sfe4j-demo.amoylabs.com`)
+      services: 
+        - name: sfe4j-demo
+          port: 28080
+  tls:
+    secretName: default-cert
