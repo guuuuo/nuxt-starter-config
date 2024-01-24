@@ -6,7 +6,7 @@ metadata:
   namespace: sfe4j-demo
 spec: 
   entryPoints: 
-    - websecure
+    - https
   routes: 
     - kind: Rule
       match: Host(`sfe4j-demo.amoylabs.com`)
