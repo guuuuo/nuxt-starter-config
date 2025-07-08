@@ -1,1 +1,1 @@
-# sfe4j-config
+# nuxt-starter-config

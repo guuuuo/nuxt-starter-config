@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sfe4j-demo
+  name: nuxt-starter
 spec:
   ingressClassName: nginx
   rules:
-  - host: sfe4j-demo.amoylabs.com
+  - host: nuxt-starter.amoylabs.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: sfe4j-demo
+            name: nuxt-starter
             port: 
-              number: 28080
+              number: 3000

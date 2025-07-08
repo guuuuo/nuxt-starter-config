@@ -2,16 +2,16 @@
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata: 
-  name: sfe4j-demo
-  namespace: sfe4j-demo
+  name: nuxt-starter
+  namespace: nuxt-starter
 spec: 
   entryPoints: 
     - https
   routes: 
     - kind: Rule
-      match: Host(`sfe4j-demo.amoylabs.com`)
+      match: Host(`nuxt-starter.amoylabs.com`)
       services: 
-        - name: sfe4j-demo
-          port: 28080
+        - name: nuxt-starter
+          port: 3000
   tls:
     secretName: default-cert

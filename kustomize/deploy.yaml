@@ -1,28 +1,21 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: sfe4j-demo
+  name: nuxt-starter
 spec:
   selector:
     matchLabels:
-      app: sfe4j-demo
+      app: nuxt-starter
   replicas: 1 # tells deployment to run 2 pods matching the template
-  revisionHistoryLimit: 0
+  revisionHistoryLimit: 1
   template:
     metadata:
       labels:
-        app: sfe4j-demo
+        app: nuxt-starter
     spec:
       containers:
-        - name: sfe4j-demo
-          image: cr.amoylabs.com:30443/sfe4j/sfe4j-demo:20
+        - name: nuxt-starter
+          image: cr.amoylabs.com:30443/guuuuo/nuxt-starter:1
           ports:
             - name: http
-              containerPort: 28080
-          env:
-            - name: ACTIVE_PROFILE
-              value: "demo"
-            - name: TITLE
-              value: "SFE4J Demo"
-            - name: BASE_DIR_PATH
-              value: "/data"
+              containerPort: 3000

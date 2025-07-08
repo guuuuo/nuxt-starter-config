@@ -1,4 +1,4 @@
-namespace: sfe4j-demo
+namespace: nuxt-starter
 resources:
   - namespace.yaml
   - deploy.yaml
