@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: nuxt-starter
+    image: cr.amoylabs.com:30443/guuuuo/nuxt-starter:1
+    restart: always
+    
+networks:
+  default:
+    external: true
+    name: proxy-net
