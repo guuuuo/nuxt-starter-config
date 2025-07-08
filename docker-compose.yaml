@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     container_name: nuxt-starter
-    image: cr.amoylabs.com:30443/guuuuo/nuxt-starter:9
+    image: cr.amoylabs.com:30443/guuuuo/nuxt-starter:10
     restart: always
     
 networks:
