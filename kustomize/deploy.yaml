@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nuxt-starter
-          image: cr.amoylabs.com:30443/guuuuo/nuxt-starter:17
+          image: cr.amoylabs.com:30443/guuuuo/nuxt-starter:20
           ports:
             - name: http
               containerPort: 3000
